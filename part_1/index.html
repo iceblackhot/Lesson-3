@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <title>Form</title>
+    <style>
+      .payment {
+        background-image: url(src/img/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="payment">
+      <div class="container">
+        <div class="form-holder">
+          <div class="form__head-holder">
+            <div class="form__head-userinfo">
+              <b>Harold Finch</b> <span>YOUR TOTAL</span>
+            </div>
+            <div class="form__head-usertotal">
+              <h1 class="form__head-money">$88</h1>
+            </div>
+          </div>
+          <form action="#" class="pay-form">
+            <div class="pay-form__input-holder">
+              <label for="card-number" class="pay-form__label"
+                >Credit card number</label
+              >
+              <input id="card-number" type="text" class="pay-form__input" />
+            </div>
+            <div class="pay-form__input-holder">
+              <label for="month" class="pay-form__label">Expiration date</label>
+              <div
+                class="pay-form__select-holder pay-form__select-holder_month"
+              >
+                <select name="month" id="month" class="pay-form__select">
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">Desember</option>
+                </select>
+              </div>
+              <div class="pay-form__select-holder pay-form__select-holder_year">
+                <select name="year" id="year" class="pay-form__select">
+                  <option value="1">2021</option>
+                  <option value="2">2020</option>
+                  <option value="3">2019</option>
+                  <option value="4">2018</option>
+                  <option value="5">2017</option>
+                </select>
+              </div>
+            </div>
+            <div class="pay-form__input-holder">
+              <label class="pay-form__label" for="cvv">CVV</label>
+              <div class="pay-form__cvv-holder">
+                <input
+                  id="cvv"
+                  type="password"
+                  class="pay-form__input-holder pay-form__input_cvv"
+                />
+                <span class="pay-form__cvv-description"
+                  >3 or 4 digits <a href="#">view example</a></span
+                >
+              </div>
+            </div>
+            <div class="pay-form__button-holder">
+              <input type="submit" class="btn" value="Pay" />
+              <a href="#" class="pay-form__link">Cancel order</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

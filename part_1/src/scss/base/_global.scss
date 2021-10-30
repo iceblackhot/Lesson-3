@@ -1,0 +1,8 @@
+a {
+  color: inherit;
+  transition: ease-in-out 0.3s;
+
+  &:hover {
+    color: rgb(60, 127, 204);
+  }
+}

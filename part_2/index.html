@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <title>Form2</title>
+    <style>
+      .form-holder {
+        background-image: url(src/img/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="sigin">
+      <div class="container">
+        <div class="form-holder">
+          <nav class="sigin-form__topnav">
+            <ul class="sigin-form__topnav-list">
+              <li class="sigin-form__topnav-links">
+                <a class="sigin-form__topnav-link" href="#">Sign in</a>
+              </li>
+              <li class="sigin-form__topnav-links">
+                <a class="sigin-form__topnav-link" href="#">Join us</a>
+              </li>
+            </ul>
+          </nav>
+          <form action="#" class="sigin-form">
+            <div class="sigin-form__input-holder">
+              <label for="username" class="sigin-form__label">Username</label>
+              <input id="username" type="text" class="sigin-form__input" />
+            </div>
+            <div class="sigin-form__input-holder">
+              <label for="userpasword" class="sigin-form__label"
+                >Password</label
+              >
+              <input
+                id="userpasword"
+                type="password"
+                class="sigin-form__input"
+              />
+            </div>
+            <div class="sigin-form__checkbox-holder">
+              <input type="checkbox" class="custom-checkbox" id="check1" />
+              <label for="check1">Keep me signed in</label>
+            </div>
+            <div class="sigin-form__button-holder">
+              <input type="submit" class="btn" value="Sign in" />
+              <a href="#" class="sigin-form__link"></a>
+            </div>
+            <ul class="sigin-form__links">
+              <li class="sigin-form__list">
+                <a class="sigin-form__link" href="#">Forgot password</a>
+              </li>
+              <li class="sigin-form__list">
+                <a class="sigin-form__link" href="#">Create an account</a>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

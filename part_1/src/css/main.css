@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.payment {
+  padding: 100px 0;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-holder {
+  max-width: 335px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+.form-holder .form__head-holder {
+  background-color: #efe2ae;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  min-height: 65px;
+}
+.form-holder .form__head-holder .form__head-userinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  max-width: 100px;
+}
+.form-holder .form__head-holder .form__head-userinfo span {
+  font-size: 12px;
+}
+.form-holder .form__head-holder .form__head-usertotal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.form-holder .form__head-holder .form__head-usertotal h1 {
+  font-size: 30px;
+}
+
+.pay-form {
+  padding: 15px 25px 0;
+  background-color: #fff;
+}
+.pay-form__input-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.pay-form__label {
+  display: block;
+  width: 100%;
+  color: gray;
+  margin: 0 0 10px;
+  padding-top: 30px;
+}
+.pay-form__input, .pay-form__select {
+  position: relative;
+  outline: none;
+  border: 2px solid gray;
+  border-radius: 0;
+  padding: 10px 7px;
+  width: 100%;
+}
+.pay-form__input_cvv {
+  outline: none;
+  border: 2px solid gray;
+  border-radius: 0;
+  max-width: 95px;
+  height: 45px;
+}
+.pay-form__input_cvv:focus {
+  border-color: #3b6ee4;
+}
+.pay-form__input:focus, .pay-form__select:focus {
+  border-color: #3b6ee4;
+}
+.pay-form__select-holder {
+  position: relative;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.pay-form__select-holder:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  border: 10px solid transparent;
+  border-top: 12px solid gray;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+}
+.pay-form__select-holder_month {
+  max-width: 175px;
+}
+.pay-form__select-holder_year {
+  max-width: 95px;
+}
+.pay-form__cvv-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 0 0 30px;
+}
+.pay-form__cvv-description {
+  font-size: 14px;
+  color: gray;
+}
+.pay-form__cvv-description a {
+  color: inherit;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+.pay-form__cvv-description a:hover {
+  color: #3c7fcc;
+}
+.pay-form__button-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.pay-form__button-holder .btn {
+  border-radius: 0;
+  border: none;
+  background-color: #4da16e;
+  cursor: pointer;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  -webkit-transition: ease-in-out 0.6s;
+  transition: ease-in-out 0.6s;
+}
+.pay-form__button-holder .btn:hover {
+  opacity: 0.8;
+}
+.pay-form__link {
+  font-size: 16px;
+  color: gray;
+}
+
+a {
+  color: inherit;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+a:hover {
+  color: #3c7fcc;
+}
